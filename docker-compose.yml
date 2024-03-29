@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  mysql:
+    build:
+      context: .
+      args:
+        - DB_DATABASE=${DB_DATABASE}
+        - DB_PASSWORD=${DB_PASSWORD}
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - "1337:80"
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:
