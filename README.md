@@ -5,12 +5,6 @@ This project is an idea I came up with after receiving (insert large number here
 It consists of a script that would crawl the web searching job opportunities that match a user profile (skillset, location/remote opportunity, etc)
 and summarize it in a web page. I might add some funcionalities later, like word recognition, so it can do an action automatically or uppon a button click (e.g "email" => Send Email).
 By now, this is just an Laravel Application with JWT Authentication.
-
-Dependencies
------------
-- Python 3.12.2
-- GPT4Free: https://github.com/xtekky/gpt4free
-- AutoGen: https://github.com/microsoft/autogen
   
 Installation
 -----------
