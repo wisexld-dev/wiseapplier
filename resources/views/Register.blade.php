@@ -12,9 +12,9 @@
 					<img src="images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form">
+				<form action="/api/register" method="POST" class="login100-form validate-form">
 					<span class="login100-form-title">
-						Register
+						Sign Up
 					</span>
 
                     <div class="wrap-input100 validate-input" data-validate = "Name is required">
@@ -34,7 +34,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="password" placeholder="Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -42,7 +42,7 @@
 					</div>
 
                     <div class="wrap-input100 validate-input" data-validate = "Confirm the password">
-						<input class="input100" type="password" name="confirm_pass" placeholder="Confirm Password">
+						<input class="input100" type="password" name="password_confirmation" placeholder="Confirm Password">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -50,8 +50,8 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
+						<button type="submit" class="login100-form-btn">
+							Register
 						</button>
 					</div>
 
@@ -65,7 +65,7 @@
 					</div>
 
 					<div class="text-center p-t-136">
-						<a class="txt2" href="#">
+						<a class="txt2" href="/login">
 							Already Registered? Log in.
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
