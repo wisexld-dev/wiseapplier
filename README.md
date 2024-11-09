@@ -10,7 +10,7 @@ Installation
 -----------
 1. Clone this repository:
    ```
-   git clone https://github.com/donburgareli/wiseapplier.git
+   git clone https://github.com/wisexld-dev/wiseapplier.git
    ```
 
 2. Install dependencies:
